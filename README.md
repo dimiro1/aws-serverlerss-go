@@ -2,7 +2,7 @@
 
 This is very straightforward, I just need to create an http request and one http response based on the API Gateway specification.
 
-# This is not ready production usage
+# This is not ready for production usage
 
 It is just a small experiment to check if could be possible to execute net/http handlers inside lambda. I have plans to create a full library from this experiment, but, I do not know when it will be published :(
 
