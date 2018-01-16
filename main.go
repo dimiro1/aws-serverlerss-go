@@ -69,7 +69,7 @@ func createResponse(_ context.Context, w *httptest.ResponseRecorder) events.APIG
 }
 
 func HelloWorldHandler(w http.ResponseWriter, r *http.Request) {
-	r.Header.Set("X-MyCustom-Header", "This is the value of my custom header")
+	w.Header().Set("X-MyCustom-Header", "This is the value of my custom header")
 	fmt.Fprint(w, "Hello World")
 }
 
