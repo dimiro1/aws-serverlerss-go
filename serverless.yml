@@ -1,0 +1,15 @@
+service: httpproxylambda
+
+provider:
+  name: aws
+  runtime: go1.x
+
+package:
+  artifact: deployment.zip
+
+functions:
+  httpproxy:
+    handler: main
+    events:
+      - http: ANY /
+      - http: ANY {proxy+}
