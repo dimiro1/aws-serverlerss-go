@@ -1,3 +1,5 @@
+# See: https://github.com/apex/gateway
+
 # How to use Standard HTTP handler with golang + AWS Lambda
 
 This is very straightforward, I just need to create an http request and one http response based on the API Gateway specification.
